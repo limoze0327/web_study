@@ -6,15 +6,15 @@
 </head>
 <body>
   <h3>회원가입</h3>
-  <form>
-    아이디 : <input type="text" name="id"> </input>
+  <form method="get"> #method > 폼의 데이터를 서버로 제출해야하기 때문에 설정해주어야 한다.
+    아이디 : <input type="text" name="id">  #input 태그는 닫지 않는다.
     <br>
-    <br>비밀번호 : <input type="password" name="password"> </input>
+    <br>비밀번호 : <input type="password" name="password"> 
     <br>
-    <br>이름 : <input type="text"> </input>
+    <br>이름 : <input type="text">
     <br>
-    <br>성별 : <input type="radio" name="gen"> 남성 </input>
-               <input type="radio" name="gen"> 여성 </input>
+    <br>성별 : <input type="radio" name="gen" value="1"> 남성 #value 속성을 설정하지 않을 경우 성별을 체크했을 때 남성과 여성이 구별되지 않는다.
+               <input type="radio" name="gen" value="2"> 여성 
     <br>
     <br>학년 :
     <select name="grade">
@@ -26,7 +26,7 @@
     <br>
     <br>
     <input type="submit" value="가입하기">
-    <input type="submit" value="다시쓰기">
+    <input type="reset" value="다시쓰기"> #다시쓰려면 type 의 속성값이 submit이 아닌 reset이어야 한다. (모든 폼 요소의 값을 초깃값으로 되돌린다.)
   </form>
 </body>
 </html>
