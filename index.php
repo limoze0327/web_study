@@ -24,7 +24,7 @@ else{ Header('location: login.php'); }
   </h1>
 
   <?php
-  $sel_query="SELECT * FROM member WHERE id LIKE '{$_SESSION['userID']}';";
+  $sel_query="SELECT * FROM member WHERE id LIKE '{$_SESSION['userID']}';"; #
   $sel_result=mysqli_query($con, $sel_query) or die("Query Error!");
 
   $record=mysqli_ferch_array($sel_result);
