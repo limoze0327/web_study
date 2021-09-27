@@ -14,7 +14,7 @@ $count=mysqli_num_rows($sel_result);
 
   if($count==0)
   {
-    echo "<script>location.href='join.html';</script>";
+    echo "<A href='join.html'>가입하기";
   }
   else
   {
@@ -25,7 +25,7 @@ $count=mysqli_num_rows($sel_result);
     }
     else
     {
-      echo "<script>location.href='login.php';</script>";
+      echo "<A href='login.php'>로그인하기";
     }
   }
 ?>
