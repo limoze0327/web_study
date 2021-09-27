@@ -11,7 +11,7 @@
     header('Location:/index.php');
   } ?>
   <h3>로그인</h3>
-  <form method="get">
+  <form method="POST" action="http://localhost:80/login_check.php">
     <br>
     <br> 아이디 <input type="text" name="id">
     <br>
