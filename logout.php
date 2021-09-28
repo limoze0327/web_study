@@ -10,5 +10,5 @@
 <?php
 include "/register.php";
 session_destroy();
-header('Location: http://localhost:80/login.php');
+header('Location: login.php');
 ?>
